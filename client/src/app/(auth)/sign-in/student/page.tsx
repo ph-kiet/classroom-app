@@ -67,7 +67,7 @@ export default function Page() {
 
         return;
       }
-      router.push("/sign-in/student");
+      router.push("/lessons");
     } catch (error) {
       console.error(error);
     }

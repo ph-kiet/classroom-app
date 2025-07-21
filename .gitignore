@@ -1,0 +1,33 @@
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+*.log
+logs/
+coverage/
+
+.next/
+.env
+.env.production
+.env.development
+
+# General
+.DS_Store
+.env
+.env.*
+!.env.example
+dist/
+build/
+*.swp
+*.swo
+.vscode/
+.idea/
+*.tgz
+coverage/
+temp/
+tmp/
+
+# Production
+*.prod.js
+*.prod.json

@@ -100,8 +100,18 @@ Follow these steps to set up and run the project:
 
 ## Application screenshots
 
+### Authentication
+<img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/fa27bd9b-8511-4a50-afb9-0c6940ec723a" />
+<img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/dfc4fd38-6064-40e3-94a7-2d735996e7db" />
+<img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/657d1524-0ee3-4331-aeed-b8bb339fbf3d" />
+<img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/75961a2f-32de-466d-a077-f69c2d45fa1e" />
 
+### Lessons
+<img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/eec3b7b8-5e66-4aff-817c-1878662aee2c" />
+<img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/edc656db-c445-461e-9cff-b6e6305bfa54" />
 
+### Chat Application
+<img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/43e1b0da-da0b-44cb-a420-0d20485fddbe" />
 
-
-   
+### Profile
+<img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/d1d45908-5668-4924-92c9-c38ba108672c" />

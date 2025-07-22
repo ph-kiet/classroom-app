@@ -5,7 +5,7 @@ import {
   createLesson,
   getAllLessons,
   makeCompleted,
-} from "../controllers/lessionController";
+} from "../controllers/lessonController";
 
 const lessonRoutes = express.Router();
 

@@ -132,3 +132,4 @@ The client application will be accessible at `http://localhost:3000`.
 5. Student search and pagination for a real production.
 6. Group chat.
 7. Update and delete lessons.
+8. Apply DRY principle.

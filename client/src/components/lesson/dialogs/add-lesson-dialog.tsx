@@ -137,7 +137,7 @@ export default function AddLessonDialog({ children }: IProps) {
                 name="title"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Lession title</FormLabel>
+                    <FormLabel>Lesson title</FormLabel>
                     <FormControl>
                       <Input type="text" {...field} />
                     </FormControl>

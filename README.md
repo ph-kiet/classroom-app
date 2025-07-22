@@ -6,7 +6,7 @@
 
 - **Node.js**
 - **npm**
-- **apikeys.txt** file (provided in email)
+- **env.txt** file (provided in email)
 
 ## Setup and Running Instructions
 
@@ -26,7 +26,7 @@ Follow these steps to set up and run the project:
    mv .env.example .env
    ```
 
-3. **IMPORTANT:** Copy and paste everything from **apikeys.txt** provided in email to .env OR use your own keys.
+3. **IMPORTANT:** Copy and paste everything from **env.txt** provided in email to .env OR use your own keys.
 
 4. Install the dependencies and start the server
 

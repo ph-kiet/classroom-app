@@ -3,6 +3,7 @@
 # Project Setup and Run Instructions
 
 ## Prerequisites
+
 - **Node.js**
 - **npm**
 - **apikeys.txt** file (provided in email)
@@ -21,13 +22,14 @@ Follow these steps to set up and run the project:
 
 2. Rename .env.example to .env
 
-    ```bash
+   ```bash
    mv .env.example .env
    ```
 
 3. **IMPORTANT:** Copy and paste everything from **apikeys.txt** provided in email to .env OR use your own keys.
-  
+
 4. Install the dependencies and start the server
+
    ```bash
    npm install
    npm run build
@@ -49,6 +51,7 @@ Follow these steps to set up and run the project:
    ```bash
    mv .env.example .env
    ```
+
 3. Install the dependencies and start the client
    ```bash
    npm install
@@ -56,12 +59,12 @@ Follow these steps to set up and run the project:
    npm run start
    ```
 
-  The client application will be accessible at `http://localhost:3000`.
-
+The client application will be accessible at `http://localhost:3000`.
 
 # Project Structure
 
 ## Server directory breakdown
+
 - **`src/`**: Contains the core application code.
   - `api/`: External APIs configuration for Twilio (SMS) and Postmark (Email).
   - `config/`: Firebase database configuration and Socket.io setup.
@@ -77,8 +80,8 @@ Follow these steps to set up and run the project:
   - `schemas/`: Contains Zod objects for validating user inputs.
   - `utils`: Helper functions: generate random access code, password hasher and password compare.
 
-
 ## Client directory breakdown
+
 - **`src/`**: Contains the core application code.
   - `app/`: File-system based routing.
     - `(auth)`: Contains pages relating to authentication: sign-in, sign-up, account set up (student).
@@ -101,28 +104,31 @@ Follow these steps to set up and run the project:
 ## Application screenshots
 
 ### Authentication
+
 <img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/fa27bd9b-8511-4a50-afb9-0c6940ec723a" />
 <img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/dfc4fd38-6064-40e3-94a7-2d735996e7db" />
 <img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/657d1524-0ee3-4331-aeed-b8bb339fbf3d" />
 <img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/75961a2f-32de-466d-a077-f69c2d45fa1e" />
 
 ### Lessons
+
 <img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/eec3b7b8-5e66-4aff-817c-1878662aee2c" />
 <img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/edc656db-c445-461e-9cff-b6e6305bfa54" />
 
 ### Chat Application
+
 <img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/43e1b0da-da0b-44cb-a420-0d20485fddbe" />
 
 ### Profile
+
 <img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/d1d45908-5668-4924-92c9-c38ba108672c" />
 
-
 ## Potential Improvements.
+
 1. Optimise database queries.
 2. Delete association between students and lessons on student deletion.
 3. Store chat messages to database (No storing mechanism for message currently).
 4. Email and phone number verification on new email or phone number update.
 5. Student search and pagination for a real production.
 6. Group chat.
-
-
+7. Update and delete lessons.

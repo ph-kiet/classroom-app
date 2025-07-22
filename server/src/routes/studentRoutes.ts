@@ -6,12 +6,33 @@ import {
   updateStudent,
 } from "../controllers/studentController";
 import { verifyToken } from "../middlewares/authMiddleware";
+import authoriseRoles from "../middlewares/roleMiddleware";
 
 const studentRoutes = express.Router();
 
-studentRoutes.get("/", verifyToken, getAllStudents);
-studentRoutes.post("/", verifyToken, createStudent);
-studentRoutes.put("/:studentPhoneNumber", verifyToken, updateStudent);
-studentRoutes.delete("/:studentPhoneNumber", verifyToken, deleteStudent);
+studentRoutes.get(
+  "/",
+  verifyToken,
+  authoriseRoles("instructor"),
+  getAllStudents
+);
+studentRoutes.post(
+  "/",
+  verifyToken,
+  authoriseRoles("instructor"),
+  createStudent
+);
+studentRoutes.put(
+  "/:studentPhoneNumber",
+  verifyToken,
+  authoriseRoles("instructor"),
+  updateStudent
+);
+studentRoutes.delete(
+  "/:studentPhoneNumber",
+  verifyToken,
+  authoriseRoles("instructor"),
+  deleteStudent
+);
 
 export default studentRoutes;

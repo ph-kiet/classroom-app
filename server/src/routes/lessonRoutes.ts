@@ -6,11 +6,17 @@ import {
   getAllLessons,
   makeCompleted,
 } from "../controllers/lessonController";
+import authoriseRoles from "../middlewares/roleMiddleware";
 
 const lessonRoutes = express.Router();
 
 lessonRoutes.get("/", verifyToken, getAllLessons);
-lessonRoutes.post("/", verifyToken, createLesson);
-lessonRoutes.put("/makeCompleted/:lessonId", verifyToken, makeCompleted);
+lessonRoutes.post("/", verifyToken, authoriseRoles("instructor"), createLesson);
+lessonRoutes.put(
+  "/makeCompleted/:lessonId",
+  verifyToken,
+  authoriseRoles("student"),
+  makeCompleted
+);
 
 export default lessonRoutes;

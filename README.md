@@ -115,3 +115,14 @@ Follow these steps to set up and run the project:
 
 ### Profile
 <img width="1724" height="1162" alt="Image" src="https://github.com/user-attachments/assets/d1d45908-5668-4924-92c9-c38ba108672c" />
+
+
+## Potential Improvements.
+1. Optimise database queries.
+2. Delete association between students and lessons on student deletion.
+3. Store chat messages to database (No storing mechanism for message currently).
+4. Email and phone number verification on new email or phone number update.
+5. Student search and pagination for a real production.
+6. Group chat.
+
+
